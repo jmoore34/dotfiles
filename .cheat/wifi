@@ -1,0 +1,14 @@
+View available networks:
+nmcli dev wifi
+Network Manager CLI - Device Wifi
+
+===============================
+
+Connect to a network:
+wpa_passphrase <ssid> [passphrase]
+
+===============================
+
+Fix issues
+sudo rmmod mwifiex_pcie && sudo modprobe mwifiex_pcie
+sudo ifconfig wlp2s0 up
